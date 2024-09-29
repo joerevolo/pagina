@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio | Switch </title>
+    <script src="js/libreria01.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="img/productos/banner.jpg" alt="">
+    </div>
+    <div style="width: 60%;margin:auto;"> 
+        <!--lado izquierdo-->
+        <div class="a" style="width: 50%; margin:auto;float:left;" > 
+            <table>
+                <caption style="text-align: center;margin-top: 30px;">VENTA DE PRODUCTOS DE VESTIR</caption>
+                <tr>
+                    <td>Productos</td>
+                    <td>
+                        <select name="" id="op" onchange="mostrar();">
+                            <option value="1">reloj</option>
+                            <option value="2">bolsa</option>
+                            <option value="3">Zapatillas</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>
+                        <input type="text" name="" id="txtPre" value="80.00" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cantidad</td>
+                    <td>
+                        <input type="number" name="" id="txtCan" value="1" onchange="calcular();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Importe a pagar</td>
+                    <td>
+                        <input type="text" name="" id="txtImp" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="boton" type="button" value="calcular" onclick="calcular();"></td>
+                    <td><input class="boton" type="button" value="nuevo" onclick="nuevo();"></td>
+                </tr>
+            </table>
+        </div>
+        <!--lado derecho-->
+        <div style="width: 50%;float: right;">
+            <img src="img/productos/reloj.jpg" id="img" width="80%" alt="">
+        </div>
+    </div>
+</body>
+</html>

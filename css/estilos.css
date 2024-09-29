@@ -1,0 +1,24 @@
+
+table, caption{
+    border: 2px solid black; 
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+ td{
+    font-size: larger;
+    padding: 20px;    
+}
+.boton{
+    padding: 5px;
+    background-color: lightblue;
+    font-weight: bold;
+    border-radius: 5px;
+}
+input,select{
+    background-color: lightblue;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px;
+}
